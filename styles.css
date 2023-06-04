@@ -12,8 +12,11 @@
     margin: 0;
     padding: 0;
     color: white;
-    background: #2a406a;
+    background: #141e30;
 }
+
+body{
+    padding:0; margin:0; width:100%; overflow-x: hidden;}
 
 a {
     text-decoration: none;
@@ -45,7 +48,7 @@ nav {
 }
 
 .fullBtn {
-    background: linear-gradient(rgb(254, 153, 59) 0%, rgb(255, 200, 93) 100%);
+    background: linear-gradient(#02a701 0%, #02a701 100%);
     padding: 10px 20px;
     color: white;
     border: none;
@@ -55,9 +58,9 @@ nav {
 }
 
 .borderBtn {
-    border: 2px solid rgb(255, 200, 93);
+    border: 2px solid #02a701;;
     padding: 10px 20px;
-    color: rgb(255, 200, 93);
+    color: #02a701;;
     font-family: ColaKind;
     border-radius: 30px;
     margin-right: 15px;
@@ -113,7 +116,8 @@ section {
 .heroTitle {
     font-family: ColaKind;
     font-size: 60px;
-    text-shadow: 2px 2px 0 rgb(254, 153, 59), -2px -2px 0 rgb(254, 153, 59), 2px -2px 0 rgb(254, 153, 59), -2px 2px 0 rgb(254, 153, 59);
+    color: #02a701;
+    text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
 }
 
 .socials {
@@ -161,11 +165,14 @@ section {
 .description {
     font-size: 23px;
     max-width: 500px;
+    width: 98%;
     font-weight: 500;
+    margin: auto;
 }
 
 .aboutImg {
     height: 600px;
+    object-fit: contain;
 }
 
 .gaming {
@@ -174,7 +181,6 @@ section {
 
 footer {
     background-color: #1d2c47;
-    width: 100vw;
     padding: 20px;
 }
 
@@ -182,14 +188,14 @@ footer p {
     background: transparent;
 }
 
-body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: 100vw;
-}
 
 /* MEDIA QUERIES */
 @media (max-width: 1170px) {
+    
+    body, section {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
     .firstNav div {
         display: none;
     }
