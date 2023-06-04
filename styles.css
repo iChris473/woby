@@ -265,6 +265,10 @@ footer p {
     .firstNav div {
         display: none;
     }
+    .hero-bg {
+        object-position: right;
+        /* object-fit: contain; */
+    } 
     .aboutSection {
         flex-direction: column;
     }
