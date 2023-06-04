@@ -102,7 +102,7 @@ section {
 .heroSection {
     margin-top: 0;
     flex-direction: row-reverse;
-    min-height: 82vh;
+    min-height: 92vh;
     overflow: hidden;
     position: relative;
 }
@@ -112,7 +112,7 @@ section {
     z-index: -9;
     opacity: .6;
     width: 100%;
-    height: 113%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -244,6 +244,7 @@ footer p {
         position: fixed;
         bottom: 0;
         background-color: #0f1724;
+        z-index: 99;
         width: 100vw;
         padding: 0;
         margin: 0;
@@ -267,6 +268,8 @@ footer p {
     }
     .hero-bg {
         object-position: right;
+        height: 200vh;
+        bottom: -50px;
     }
     .connectW {
         font-size: 14px !important;
@@ -281,6 +284,7 @@ footer p {
     }
     .heroSection {
         flex-direction: column;
+        min-height: 90vh;
     }
     .heroBtn {
         font-size: 19px;
@@ -321,4 +325,17 @@ footer p {
     .buyWobi {
         display: none;
     }
+}
+
+
+/* ANIMATIONS */
+
+.shake {
+    animation: shake 3s ease infinite;
+  }
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+    20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
