@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "ColaKind";
+    src: url("./fonts/ColaKind.ttf");
+}
+
+@font-face {
+    font-family: "modernaLight";
+    src: url("./fonts/Moderna\ W01\ Light.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background: #2a406a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nav {
+    color: rgb(184, 190, 204);
+    font-family: ColaKind;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.logo {
+    height: 60px;
+}
+
+.fullBtn {
+    background: linear-gradient(rgb(254, 153, 59) 0%, rgb(255, 200, 93) 100%);
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: ColaKind;
+    font-size: 18px;
+}
+
+.borderBtn {
+    border: 2px solid rgb(255, 200, 93);
+    padding: 10px 20px;
+    color: rgb(255, 200, 93);
+    font-family: ColaKind;
+    border-radius: 30px;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.firstNav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    gap: 40px;
+}
+
+.firstNav div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section {
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.heroImg {
+    object-fit: contain;
+    height: 500px;
+}
+
+.heroSection {
+    flex-direction: row-reverse;
+    min-height: 82vh;
+}
+
+.heroers {
+    flex-direction: column;
+    gap: 50px;
+}
+
+.heroTexts {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.heroDesc {
+    font-family: Kanit;
+}
+
+.heroTitle {
+    font-family: ColaKind;
+    font-size: 60px;
+    text-shadow: 2px 2px 0 rgb(254, 153, 59), -2px -2px 0 rgb(254, 153, 59), 2px -2px 0 rgb(254, 153, 59), -2px 2px 0 rgb(254, 153, 59);
+}
+
+.socials {
+    gap: 15px;
+}
+
+.social {
+    height: 25px;        
+}
+
+.heroBtn {
+    font-size: 30px;
+}
+
+.HeroBtns {
+    gap: 30px;
+}
+
+.aboutSection {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.aboutSect {
+    flex-direction: row-reverse;
+}
+
+.aboutHeader {
+    font-size: 30px;
+}
+
+.headerText {
+    font-family: ColaKind;
+    font-size: 60px;
+    margin: 20px auto;
+    color: #02a701;
+    text-shadow: 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white;
+}
+
+.abtDesc {
+    font-family: modernaLight;
+    text-align: left;
+}
+
+.description {
+    font-size: 23px;
+    max-width: 500px;
+    font-weight: 500;
+}
+
+.aboutImg {
+    height: 600px;
+}
+
+.gaming {
+    flex-direction: row-reverse;
+}
+
+footer {
+    background-color: #1d2c47;
+    width: 100vw;
+    padding: 20px;
+}
+
+footer p {
+    background: transparent;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1170px) {
+    .firstNav div {
+        display: none;
+    }
+    .aboutSection {
+        flex-direction: column;
+    }
+    .heroImg {
+        width: 98%;
+        margin: 30px auto;
+        height: auto;
+    }
+    .heroSection {
+        flex-direction: column;
+    }
+    .heroBtn {
+        font-size: 19px;
+    }
+    .HeroBtns {
+        gap: 20px;
+    }
+    .description {
+        font-size: 18px;
+    }
+    .abtDesc, .aboutHeader {
+        text-align: center;
+    }
+    .gaming {
+        flex-direction: column;
+    }
+}
+
+
+
+@media (max-width: 700px) {
+    .buyWobi {
+        display: none;
+    }
+}
