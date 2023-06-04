@@ -103,6 +103,7 @@ section {
     margin-top: 0;
     flex-direction: row-reverse;
     min-height: 82vh;
+    overflow: hidden;
     position: relative;
 }
 
@@ -199,7 +200,6 @@ section {
 footer {
     background-color: #172338;
     padding: 20px;
-    margin-bottom: 60px;
 }
 
 footer p {
@@ -267,8 +267,10 @@ footer p {
     }
     .hero-bg {
         object-position: right;
-        /* object-fit: contain; */
-    } 
+    }
+    .connectW {
+        font-size: 14px !important;
+    }
     .aboutSection {
         flex-direction: column;
     }
@@ -306,6 +308,9 @@ footer p {
     }
     .fs {
         height: 20px;
+    }
+    footer {
+        margin-bottom: 60px;
     }
     
 }
