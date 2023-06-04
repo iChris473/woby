@@ -12,11 +12,16 @@
     margin: 0;
     padding: 0;
     color: white;
-    background: #141e30;
 }
 
 body{
-    padding:0; margin:0; width:100%; overflow-x: hidden;}
+    padding:0;
+    margin:0;
+    width:100%;
+    overflow-x: hidden;
+    position: relative;
+    background: #141e30;
+}
 
 a {
     text-decoration: none;
@@ -34,7 +39,7 @@ nav {
 }
 .nav {
     color: rgb(184, 190, 204);
-    font-family: ColaKind;
+    font-family: 'Kanit';
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -55,12 +60,13 @@ nav {
     border-radius: 30px;
     font-family: ColaKind;
     font-size: 18px;
+    border: 2px solid white;
 }
 
 .borderBtn {
-    border: 2px solid #02a701;;
+    border: 3px solid #02a701;;
     padding: 10px 20px;
-    color: #02a701;;
+    color: #02a701;
     font-family: ColaKind;
     border-radius: 30px;
     margin-right: 15px;
@@ -94,8 +100,19 @@ section {
 }
 
 .heroSection {
+    margin-top: 0;
     flex-direction: row-reverse;
     min-height: 82vh;
+    position: relative;
+}
+
+.hero-bg {
+    position: absolute;
+    z-index: -9;
+    opacity: .6;
+    width: 100%;
+    height: 113%;
+    object-fit: cover;
 }
 
 .heroers {
@@ -180,13 +197,39 @@ section {
 }
 
 footer {
-    background-color: #1d2c47;
+    background-color: #172338;
     padding: 20px;
+    margin-bottom: 60px;
 }
 
 footer p {
     background: transparent;
+    font-family: 'Kanit';
+    font-size: 15px;
 }
+
+.partners {
+    margin: 100px auto;
+}
+
+.backersImg {
+    gap: 30px;
+}
+
+.backers {
+    width: 150px;
+    object-fit: contain;
+}
+
+.backersText {
+    text-align: center;
+    font-size: 40px;
+}
+
+.mobileNav {
+    display: none;
+}
+
 
 
 /* MEDIA QUERIES */
@@ -195,6 +238,29 @@ footer p {
     body, section {
         overflow-y: scroll;
         overflow-x: hidden;
+    }
+    .mobileNav {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        background-color: #0f1724;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+    .mobileNav div {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 800px;
+        margin: auto;
+        background-color: transparent;
+    }
+    .mobileNav div a {
+        background-color: transparent;
+        font-family: 'Kanit';
     }
     .firstNav div {
         display: none;
@@ -225,6 +291,19 @@ footer p {
     .gaming {
         flex-direction: column;
     }
+    .backersImg {
+        flex-direction: column;
+    }
+    .aboutImg {
+        height: 400px;
+    }
+    .heroDesc {
+        font-size: 20px;   
+    }
+    .fs {
+        height: 20px;
+    }
+    
 }
 
 

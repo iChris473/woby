@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Woby INU</title>
+    <title>$WobyINU</title>
+    <meta name="description" content="EFrom Playtime to Paytime: $WOBY Makes it Playfully Profitable!">
+    <link rel="icon" href="./images/logo.PNG">
     <link rel="stylesheet" href="./styles.css"><link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap" rel="stylesheet">
@@ -16,19 +18,28 @@
             <div class="firstNav">
                 <img src="/images/logo.PNG" alt="logo" class="logo">
                 <div>
-                    <a href="#home">Home</a>
+                    <a href="#">Home</a>
                     <a href="#stake">Stake</a>
                     <a href="#game">Game</a>
                 </div>
             </div>
             <div class="secNav">
                 <button class="borderBtn buyWobi">Buy $Wobi </button>
-                <button class="fullBtn">Connect Wallet </button>
+                <button class="fullBtn connectW">Connect Wallet </button>
             </div>
         </div>
     </nav>
+    <!-- MOBILE NAV -->
+    <section class="mobileNav center">
+        <div>
+            <a href="#">Home</a>
+            <a href="#stake">Stake</a>
+            <a href="#game">Game</a>
+        </div>
+    </section>
     <!-- HERO SECTION -->
     <section class="heroSection center">
+        <img src="./images/banner-bg.webp" class="hero-bg">
         <img src="./images/HOME.png" alt="home-page" class="heroImg">
         <div class="heroers center">
             <div>
@@ -57,7 +68,7 @@
         <img src="./images/About.png" alt="about" class="aboutImg">
     </section>
     <!-- GAMING -->
-    <section id="about" class="gaming aboutSection center">
+    <section id="game" class="gaming aboutSection center">
         <div>
             <h1 class="aboutHeader headerText">Gaming</h1>
             <p class="abtDesc description">Welcome to the thrilling world of WOBY Inu Racing! Join Woby, the energetic squirrel, in an adrenaline-fueled racing game where he collects nuts while navigating dynamic tracks. Dodge obstacles, outpace rivals, and strategically use power-ups to secure victory. With each win, unlock rewards, enhance Woby's abilities, and customize his appearance. Engage in friendly competition and connect with a global community of racers. Get ready for an epic racing adventure and let the excitement of WOBY Inu Racing take you to new heights!</p>
@@ -65,16 +76,32 @@
         <img src="./images/GAME.png" alt="about" class="aboutImg">
     </section>
     <!-- STAKE -->
-    <section id="about" class="aboutSection center">
+    <section id="stake" class="aboutSection center">
         <div>
             <h1 class="aboutHeader headerText">Staking</h1>
-            <p class="abtDesc description">When WOBI token holders stake their tokens, they are rewarded with a 1% allocation of transaction fees in ETH. This attractive incentive enables them to earn passive income while actively supporting the network's robustness and reliability. By staking, token holders not only benefit from the financial rewards but also contribute to the overall success and sustainability of the WOBI ecosystem.</p>
+            <p class="abtDesc description">As part of our commitment to our community, we will be allocating 5% of the total token supply to the staking pool. Here's how it works: for staking periods of 1 to 7 days, you'll enjoy a bonus of 0.42% and a remarkable Annual Percentage Yield (APY) of 21.9%. Opting for a longer commitment of 21 days will reward you with a bonus of 1.2% and an incredible APY of 400%. And for those who are in it for the long haul with a 60-day stake, a remarkable 5% bonus awaits you, accompanied by an extraordinary APY of 1500%. It's time to stake your claim, reap the rewards, and maximize your earnings with our enticing staking program!</p>
         </div>
         <img src="./images/Staking.png" alt="about" class="aboutImg">
     </section>
+    <!-- BACKERS/PARTNERS -->
+    <section id="partners" class="partners">
+        <h1 class="backersText headerText">Backers/Partners</h1>
+        <div class="backersImg center">
+            <img src="./images/P1.png" alt="backers" class="backers">
+            <img src="./images/P2.png" alt="backers" class="backers">
+            <img src="./images/P3.png" alt="backers" class="backers">
+        </div>
+    </section>
     <!-- FOOTER -->
-    <footer class="center">
-        <p>Copyright © 2023 wobyinu. All Rights Reserved</p>
+    <footer class="center" style="flex-direction: column; gap: 50px; padding: 50px 10px;">
+        <div class="socials center">
+            <img src="./images/twitter.png" alt="twitter" class="social fs">
+            <img src="./images/telegram.png" alt="twitter" class="social fs">
+            <img src="./images/gitbook.png" alt="twitter" class="social fs">
+            <img src="./images/youtube.png" alt="twitter" class="social fs">
+            <img src="./images/insta.png" alt="twitter" class="social fs">
+        </div>
+        <p style="text-align: center;">Copyright © 2023 <a href="https://www.wobyinu.com" style="color: #02a701;">wobyinu.com</a> <br> All Rights Reserved</p>
     </footer>
 </body>
 </html>
