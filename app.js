@@ -8,5 +8,6 @@ window.addEventListener('load', function() {
     // Show the page content
     var pageContent = document.getElementById('page-content');
     pageContent.style.display = '';
+    document.querySelector('body').classList.remove('centerBody');
     AOS.init();
 });
