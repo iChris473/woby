@@ -329,6 +329,11 @@ footer p {
     margin: 10px;
 }
 
+.stck {
+    height: 30px;
+    margin-right: 10px;
+}
+
 .arrows svg {
     height: 30px;
     width: 30px;
