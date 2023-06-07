@@ -393,13 +393,32 @@ footer p {
     margin-top: 40px;
 }
 
-.pulse {
-    animation: pulse 2s infinite ease-in-out alternate;
-  }
-  @keyframes pulse {
-    from { transform: scale(0.7); }
-    to { transform: scale(1.0); }
-  }
+.tknCont{
+    margin-top: 50px;
+    background: #1d29415f;
+    padding: 50px;
+    border-radius: 10%;
+}
+
+.tknCont h2 {
+    font-family: ColaKind;
+    font-size: 35px;
+    color: white;
+    color: rgb(230, 230, 230);
+}
+
+.tknCont p {
+    font-family: Kanit;
+    color: rgb(223, 223, 223);
+    font-size: 17px;
+} 
+
+.tknCont div h3 {
+    font-family: ColaKind;
+    font-size: 25px;
+    margin-top: 20px;
+    color: rgb(230, 230, 230);
+}
 
 
 /* MEDIA QUERIES */
@@ -489,7 +508,9 @@ footer p {
     footer {
         margin-bottom: 60px;
     }
-    
+    .tokenomicsDiv {
+        flex-direction: column;
+    }    
 }
 
 
@@ -518,3 +539,11 @@ footer p {
     10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
     20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
+
+.pulse {
+    animation: pulse 2s infinite ease-in-out alternate;
+  }
+  @keyframes pulse {
+    from { transform: scale(0.7); }
+    to { transform: scale(1.0); }
+  }
