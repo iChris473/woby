@@ -420,6 +420,29 @@ footer p {
     color: rgb(230, 230, 230);
 }
 
+.cAdd {
+    border: 1px solid #02a701;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    max-width: 600px;
+    font-family: Kanit;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+}
+
+.contractA {
+    flex-direction: column;
+    gap: 20px;
+    margin: 150px auto;
+}
+.contractA button {
+    background: #1d29415f;
+    padding: 10px 60px;
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 1170px) {
@@ -524,6 +547,9 @@ footer p {
     }
     .arrows {
         display: none;
+    }
+    .contractA h1 {
+        font-size: 40px;
     }
 }
 

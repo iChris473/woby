@@ -30,3 +30,21 @@ arrowRight.addEventListener('click', () => {
     })
 })
 
+const copyBtn = document.querySelector('.cAddBtn');
+copyBtn.addEventListener('click', copyToClipboard);
+
+function copyToClipboard() {
+    const textToCopy = document.querySelector('.cAdd').innerText;
+    navigator.clipboard.writeText(textToCopy)
+     .then(() => {
+        copyBtn.innerText = 'Copied';
+        copyBtn.style.backgroundColor = '#02a701';
+        setTimeout(() => {
+            copyBtn.innerText = 'Copy';
+            copyBtn.style.backgroundColor = '#1d29415f';
+        }, 2000)
+    })
+    .catch((error) => {
+        window.alert('Unable to copy text to clipboard');
+    });
+};
