@@ -132,6 +132,7 @@ nav {
     border-radius: 30px;
     margin-right: 15px;
     font-size: 18px;
+    background: white;
 }
 
 .firstNav {
@@ -549,7 +550,11 @@ footer p {
         display: none;
     }
     .contractA h1 {
-        font-size: 40px;
+        font-size: 35px;
+        text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;    
+    }
+    .cAdd {
+        font-size: 13px;
     }
 }
 
