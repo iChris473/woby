@@ -30,11 +30,23 @@ arrowRight.addEventListener('click', () => {
     })
 })
 
-const copyBtn = document.querySelector('.cAddBtn');
-copyBtn.addEventListener('click', copyToClipboard);
+const copyBtnETH = document.querySelector('.cAddBtnETH');
+copyBtnETH.addEventListener('click', copyETH);
 
-function copyToClipboard() {
-    const textToCopy = document.querySelector('.cAdd').innerText;
+function copyETH(){
+    const textToCopy = document.querySelector('.cAddETH').innerText;
+    copyToClipboard(textToCopy, copyBtnETH);
+}
+
+const copyBtnBSC = document.querySelector('.cAddBtnBSC');
+copyBtnBSC.addEventListener('click', copyBSC);
+
+function copyBSC(){
+    const textToCopy = document.querySelector('.cAddBSC').innerText;
+    copyToClipboard(textToCopy, copyBtnBSC);
+}
+
+function copyToClipboard(textToCopy, copyBtn) {
     navigator.clipboard.writeText(textToCopy)
      .then(() => {
         copyBtn.innerText = 'Copied';
